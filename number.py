@@ -3,6 +3,7 @@
 # Created on: March 24, 2025
 # This program will ask you for a positive integer, then multiply that number by 0 to 10.
 
+
 def main():
     while True:
         try:
@@ -22,16 +23,16 @@ def main():
 
     print(f"\nMultiplication Table for {user_number}:")
 
-    Counter = 0
-    while Counter <= 10:
-        Product = user_number * Counter
-        print(f"{user_number} x {Counter} = {Product}")
+    counter = 0
+    for counter in range(11):
+        product = user_number * counter
+        print(f"{user_number} x {counter} = {product}")
 
         # This is the nested statement which i have added
-        if Product > 50:
+        if product > 50:
             print("That's a big product!")
 
-        Counter += 1
+        counter += 1
 
     print("Thanks for playing!")
 
